@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food delivery</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+    *{
+        margin:0px;
+
+    }
+        
+        .head{
+             /*display:flex; */
+            background-color: rgba(0, 0, 0, 0.505);
+            width: 130vw;
+            height:25vh;
+            
+            
+        }
+        .contact{
+            color:white;
+            text-decoration:none;
+             transition:all 0.2s ease-in-out;
+        }
+        .contact:hover{
+            color:orange;
+            font-size:3vw;
+
+        }
+        /* .head::before{
+            
+            background:url(https://source.unsplash.com/1600x900/?food,delivery);
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width:100vw;
+            height:60vh;
+            z-index: -1;
+            opacity: 15px;
+
+        } */
+        
+        .list{
+            list-style: none;
+            position:relative;
+            top:1vh;
+            padding-left:9vw;
+            color: pink;
+            text-shadow: 1px 1px whitesmoke;
+            font-family: comic sans ms;
+            transition:0.5s all ease-in-out;
+
+        }
+        navbar{
+           
+            display:flex;
+            flex-direction: row;
+            height:6vh;
+            background-color:rgba(8,0,0,0.600);
+
+        }
+        
+        .list:hover{
+            color:orange;
+            cursor: pointer;
+            font-size:2.2vw;
+        }
+        .food{
+            display: flex;
+            width: 100%;
+            height:40vh;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 10vh;
+           
+           
+            
+        }
+
+        /*.food::before{
+            background:url(https://source.unsplash.com/1600x900/?food,delivery);
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width:100vw;
+            height:83vh;
+            z-index: -1;
+            opacity: 20px;
+            
+        } */
+        .h1{
+            font-family: comic sans ms;
+    color: #fff;
+           font-size: 3rem;
+           /* color:whitesmoke; */
+           animation: jump 4s ease-in-out infinite;
+            animation-name:deliv;
+           animation-duration:infinite ;
+           animation-iteration-count: infinite;
+           animation-delay:2s ; 
+
+        }
+         
+         @keyframes deliv {
+            from{
+                font-size:1rem;
+                color:red;
+                
+            }
+            to{
+                font-size:3.4rem;
+                color:whitesmoke;
+            }
+            
+        } 
+        {% comment %} @keyframes jump {
+            33% {
+                text-shadow: 0 60px #f37121, 0 150px #f2aaaa;
+            }
+            50% {
+                transform: translate(0, 0) skewX(-160deg);
+                text-shadow: 0 0px #8fc0a9, 0 0px #84a9ac;
+            }
+            66.67% {
+                text-shadow: 0 -60px #d54062, 0 -150px #8fc0a9;
+            }
+            } {% endcomment %}
+        .quote{
+            
+            font-family: comic sans ms;
+            font-size: 2.2rem;
+            text-align:center;
+            color: #d54062;
+            font-weight: bold;
+            text-shadow: 2px 2px whitesmoke;    
+            transition: all 1s ease-in-out;
+
+        }
+        
+        .quote:hover{
+            transform:skew(30deg);
+        }
+        
+        /* .logo{
+            border: 2px solid red;
+            /* display: inline-block; */
+            
+           /* margin-left: 87vw;
+           padding-bottom: 30vh; */
+           /* top: -80px; */
+
+           
+        /* } */ 
+        #log{
+            position: relative;
+            top: 0vh;
+            right:-95vw;
+            width: 5vw;
+            animation-name: del;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes del {
+            0%{
+                top: 0vh;
+                right:-95vw;
+                /* background-color:tomato; */
+            }
+            25%{
+                top: 0vh;
+                right:-75vw;
+                /* background-color: yellow; */
+            }
+            75%{
+                top: -10vh;
+                right: -75vw;
+                /* background-color: rgb(87, 185, 185); */
+            }
+            100%{
+                top: -10vh;
+                right:-95vw;
+            }
+        }
+        .sec{
+            display:flex;
+            flex-direction:row;
+            height:80vh;
+            
+            
+          
+        }
+        .bob{
+            position:relative;
+            background:url(videos/food_omlet.jpeg);
+            background-position:center center;
+            background-repeat:no-repeat;
+            background-attachment:fixed;
+            background-size:cover;
+            
+        }
+        
+        .boxes{
+        position:relative;  
+        border: 1vh solid #deb887;
+        border-radius: 11px;
+        box-shadow: 5px 5px whitesmoke;
+        margin:2vh 1vw;
+        width:30vw;
+        height:60vh;
+        background-color:rgba(8,0,0,0.505) ;
+        z-index:1000;
+
+        }
+        
+        h3{
+            color:cornsilk;
+            text-shadow: 1px 1px cornsilk;
+            /* text-align: center; */
+            font-family: comic sans ms;
+            font-size: 2vw;
+            -webkit-animation: tipsy 5s infinite;
+            animation: tipsy 5s infinite;
+            
+        }
+        @keyframes tipsy {
+            from {
+                transform: translateX(0px); 
+            }
+            to{
+                transform: translateX(65px);
+            }
+}
+        .dishes{
+            color: rgb(245, 232, 182);
+            text-align: center;
+            position:relative;
+            font-size: 1.5vw;
+        }
+        .dish{
+            width: 8vw;
+            margin-top: 2vh;
+            margin-left: 7vw;
+            
+            border-radius: 2vw;
+            transition:0.5s all ease-in-out;
+        }
+        .dish:hover{
+            transform:scale(1.3);
+        }
+        .butt{
+            border: white;
+            background-color: white;
+            width: 9vw;
+            height: 6vh;
+            border-radius: 5vw;
+            margin-left: 9vw;
+            margin-top: 4vh;
+            font-weight: bold;
+            font-family: comic sans ms;
+            box-shadow: 1vh 1vh pink;
+            transition:0.5s all ease-in-out;
+
+        }
+        .butt:hover{
+            cursor: pointer;
+            background-color: plum;
+            transform:scale(1.2);
+            
+        }
+        .img5{
+            left:50vw;
+            width:20vw;
+            border:2px solid transparent;
+            border-radius:70px;
+            height:18vh;
+            border:2px soild red;
+        }
+        .visible{
+            display:none;
+        }
+        
+        .foot{
+            background-color:#FF91A4;
+            
+            border: black;
+            /*border-radius: 11px;*/
+        }
+        .copy{
+            color: black;
+            text-align:center;
+            font-size: 20px;
+            
+        }
+        .footicons1
+        {
+            padding-left:1vw;
+            width:2vw;
+            height:5vh;
+            
+        }
+        .footicons2
+        {
+            padding-left:1vw;
+            width:2vw;
+            height:5vh;
+            
+        }
+        .footicons3
+        {
+            padding-left:1vw;
+            width:2vw;
+            height:5vh;
+            
+        }
+        .footicons4
+        {
+            padding-left:1vw;
+            width:2vw;
+            height:5vh;
+            
+        }
+        .footicons5
+        {
+            padding-left:1vw;
+            width:2vw;
+            height:5vh;
+            
+        }
+        @media (max-width:850px)
+        {
+            .sec{
+                display:flex;
+                
+                flex-direction:column;
+            }
+            .boxes{
+                height:22%;
+                width:93%;
+            }
+            .sec::before{
+                height:100vh;
+            }
+            
+            
+            .names{
+                position:relative;
+                text-align:center;
+                left:30vw;
+                width:40vw;
+                top:-5vh;
+                
+
+            }
+            .butt{
+                width:10vw;
+                position:relative;
+                left:68vw;
+                top:-14vh;
+            }
+            .food::before{
+            background:url(https://source.unsplash.com/1600x900/?food,delivery);
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+            height:83vh;
+            z-index: -1;
+            opacity: 20px;
+            }
+            .dish{
+                width:10vw;
+            }
+            .head2{
+                font-size:3vw;
+            }
+            @keyframes deliv {
+            from{
+                font-size:0.2rem;
+                color:red;
+            }
+            to{
+                font-size: 1.8rem;
+                color:whitesmoke;
+
+            }
+            }
+            .img5{
+            left:50vw;
+            width:18vw;
+            height:12vh;
+            border:2px solid transparent;
+            border-radius:70px;
+            }
+            .list{
+            display:none;
+            
+            /*list-style: none;
+
+            padding-top:6px;
+            padding-left:20px;
+            color: whitesmoke;
+            text-shadow: 1px 1px whitesmoke;
+            font-family: comic sans ms;
+            transition:0.5s all ease-in-out;*/
+            }
+            .visible{
+
+                position:relative;
+                
+                display:inline-block;
+                
+                left:-2vw;
+                
+            }
+            .feature{
+                width:8rem;
+                position:relative;
+                
+                height:4vh;
+                border:2px solid transparent;
+                border-radius:18px;
+                background-color:orange;
+                font-family:comic sans ms;
+            }
+            .feature option{
+                background-color:red;
+                
+            }
+            .foot{
+            background-color:#FF91A4;
+            
+            position:relative;
+            bottom:-30vh;
+            
+            
+            
+            }
+            .copy{
+                margin-bottom:1.2rem;
+                font-size:1rem;
+                text-align:center;
+            }
+            .footicons1
+        {
+            padding-left:1vw;
+            width:3vw;
+            height:4vh;
+            
+        }
+        .footicons2
+        {
+            padding-left:1vw;
+            width:3vw;
+            height:4vh;
+            
+        }
+        .footicons3
+        {
+            padding-left:1vw;
+            width:3vw;
+            height:4vh;
+            
+        }
+        .footicons4
+        {
+            padding-left:1vw;
+            width:3vw;
+            height:4vh;
+            
+        }
+        .footicons5
+        {
+            padding-left:1vw;
+            width:3vw;
+            height:4vh;
+            
+        }
+            
+            
+
+        }
+            
+       
+        
+        
+
+    </style>
+</head>
+<body class="bob">
+    
+        <navbar class="navigation">
+            <ul class="heading">
+                <a class="list">HOME</a>
+                <a class="list">SERVICES</a>
+                <a class="list">ABOUT</a>
+                <a href="/contact.html" target="_blank" class="list contact">CONTACT US</a>
+                <div class="visible" >
+                    
+                    <select name="" class="feature">
+                        <option value="des">HOME</option>
+                        <option value="edit">ABOUT</option>
+                        <option value="edit">SERVICES</option>
+                        <option value="edit">CONTACT US</option>
+                    </select>
+                </div>
+
+            </ul>
+            
+        </navbar>
+        <section class="food">
+            <!-- <div class="logo"> -->
+                <!-- <img src="videos/Food.png"> -->
+            <!-- </div> -->
+            <h1 class="h1">THE GLASS ONION</h1>
+            <div class="div2">
+            <img src="videos/cserving1.gif" class="img5">
+            </div>
+            
+            
+        </section>
+        <section class ="sec">
+            <div class="boxes">
+
+                <h3 class="head2">Cassoulet</h3>
+                <img src="videos/casoulette.jpg" class="dish" >
+                <div class="names">
+                <p class="dishes">It is a medieval peasant dish, designed to make do with whatever was around.It is made up of white beans baked with meat, it takes its name from its cooking pot.</p> 
+                </div>  
+                <button class="butt">Read More</button>
+            
+            </div>
+            <div class="boxes">
+                <h3 class="head2">Cherry Clafoutis</h3>
+                <img src="videos/cherry.jpg" class="dish">
+                 <div class="names">
+                <p class="dishes">It is baked with fruits such as apples, plums, pears, peaches and butter and covered with a thick flan like batter and it can be served either warm or cold.</p>
+                 </div>
+                <button class="butt">Read More</button>
+
+            </div>
+            <div class="boxes">
+                <h3 class="head2">Jambon-Beurre</h3>
+                <img src="videos/jambon.jpg" class="dish">
+                <div class="names">
+                <p class="dishes">It is a sandwich made of a bagutte sliced open, spread with 
+                butter, and filled with slices of ham.the smell of food is so good ,u will sureply feel hungrey.</p>
+                </div>
+                <button class="butt">Read More</button>
+            </div>
+            <div class="boxes">
+                <h3 class="head2">Flamiche</h3>
+                <img src="videos/flamiche.jpg" class="dish">
+                <div class="names">
+                <p class="dishes">It is a speciality of <b>Picardy</b> and a puff pastry made with leeks and cream.The pastry is made of brioche type dough.It tastes good and sweet.</p>
+                </div>
+                <button class="butt">Read More</button>
+            </div>
+        </section>
+        
+        <footer class="foot">
+       
+        <p class="copy">&#169 Copyright 2021|Template</p>
+        <marquee scrollamount="2" direction="right">
+        <a href="https://www.instagram.com/rohan_mahto_/"><img src ="videos/instagram.png" class ="footicons1"></a>
+        <a href=""><img src ="videos/linkedin.png" class ="footicons2"></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=muskan002gupta@gmail.com"><img src ="videos/mail.png" class ="footicons3"></a>
+         <a href=""><img src ="videos/facebook.png" class ="footicons4"></a>
+        <a href=""> <img src ="videos/github.png" class ="footicons5"></a>
+        </marquee>
+    
+    </footer>
+
+</body>
+</html>
